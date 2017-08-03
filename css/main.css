@@ -36,6 +36,10 @@
   font-size: 3rem;
 }
 
+a {
+  cursor: pointer;
+}
+
 
 .main-jumbotron {
   background-image: url("../img/bg_main.jpg");
