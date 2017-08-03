@@ -60,6 +60,9 @@
   cursor: pointer;
   color: #D18275;
 }
+.main-jumbotron a:hover {
+  color: #E3ABC0;
+}
 
 .main-details {
   background-color: #73265D;
