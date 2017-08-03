@@ -11,81 +11,194 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div class="main-jumbotron jumbotron pos-rel font-smoothing-on">
+      <div class="pos-abs overlay opacity-8"></div>
+      <div class="pos-abs pattern-overlay dots opacity-6"></div>
+      <div class="container pos-rel">
+        <h1 class="font-cursive">Come to my party!</h1>
+        <h3>I'm not going <a data-toggle="modal" data-target="#toCity" class="bigger">to City</a> this fall, but you can visit me <span class="bigger">in the city! Chicago,</span> that is! Come to <a data-toggle="modal" data-target="#myPoolParty">my pool party</a> on Saturday 08/12!. It's my 14th birthday, and also my going away party. <a data-toggle="modal" data-target="#soMuchFun" class="bigger">It'll be so much fun!</a></h3>
+        <h2>I'm going to miss everyone so much. :(</h2>
+        <h4>PS - My mom wrote out a bunch of rules that everyone must read, sorry. She'll let us have fun, though! XD</h4>
+        <h3>See you then! <a data-toggle="modal" data-target="#yay">YAY!</a></h3>
+        <h3><a data-toggle="modal" data-target="#aria">~Aria</a></h3>
+
+        <!-- toCity -->
+        <div class="modal fade" id="toCity" tabindex="-1" role="dialog" aria-labelledby="toCityLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Too bad she's leaving... She was just getting cool.</h4>
+              </div>
+              <div class="modal-body">
+                <img src="img/to_city.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- myPoolParty -->
+      <div class="modal fade" id="myPoolParty" tabindex="-1" role="dialog" aria-labelledby="myPoolPartyLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myPoolPartyLabel">Pool party Diva.</h4>
+            </div>
+            <div class="modal-body">
+              <img src="img/my_pool_party.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- yay -->
+      <div class="modal fade" id="yay" tabindex="-1" role="dialog" aria-labelledby="yayLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="yayLabel">Yay.</h4>
+            </div>
+            <div class="modal-body">
+              <img src="img/yay.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- aria -->
+      <div class="modal fade" id="aria" tabindex="-1" role="dialog" aria-labelledby="ariaLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="ariaLabel">I wuv you.</h4>
+            </div>
+            <div class="modal-body">
+              <img src="img/aria.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- soMuchFun -->
+      <div class="modal fade" id="soMuchFun" tabindex="-1" role="dialog" aria-labelledby="soMuchFunLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="soMuchFunLabel">When you're this BA there's no hiding it.</h4>
+            </div>
+            <div class="modal-body">
+              <img src="img/so_much_fun.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+    <div class="main-details font-smoothing-on">
       <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        <div class="row">
+          <div class="col-md-4">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <strong>Saturday August 12</strong>
+          </div>
+          <div class="col-md-4">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <strong>2:00pm - 5:00pm</strong>
+         </div>
+          <div class="col-md-4">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <strong>Riverside Casino</strong>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+    <div class="more-details">
+      <div class="container">
+        <h3>From the grownups in charge of this party:</h3>
+        <ol>
+          <li>Bring your swimsuit and towel. We will provide <a data-toggle="modal" data-target="#snacks">snacks</a>, drinks and <a data-toggle="modal" data-target="#cake">cake</a>.</li>
+          <li>Text Bryan or Crystal when you arrive and we will meet you at the hotel entrance (to the left of the main casino doors). We will meet you at the chairs by the door.</li>
+          <li>The door to the pool is locked, accessed by hotel room key only, Crystal and Bryan are the keymasters. No one should leave the pool area without permission.</li>
+          <li>We need the phone numbers of the adult that will be picking you up after the party. Your adult can contact Crystal or Bryan ahead of time to provide contact info. No one gets into the party unless we know how to contact your adult type responsible person.</li>
+          <li>If anyone tries to sneak into the casino, then everyone <a data-toggle="modal" data-target="#includingAria">(including Aria)</a> will be asked to leave by the hotel staff. Obnoxious behavior, in general may also get us asked to leave. No one wants to be <strong class="upper">that kid</strong>, so don't let it be you.</li>
+          <li><h4>Contact Info</h4>
+            <ul>
+              <li>Aria: <a href="tel:3193257777">319-325-7777</a></li>
+              <li>Bryan - <strong class="upper small">dad</strong>: <a href="tel:3193318413">319-331-8413</a></li>
+              <li>Crystal - <strong class="upper small">mom</strong>: <a href="tel:3193259066">319-325-9066</a></li>
+            </ul>
+          </li>
+        </ol>
+        <!-- includingAria -->
+        <div class="modal fade" id="includingAria" tabindex="-1" role="dialog" aria-labelledby="includingAriaLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="includingAriaLabel">Getting us kicked out will result in this...</h4>
+              </div>
+              <div class="modal-body">
+                <img src="img/including_aria.jpg">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <!-- cake -->
+        <div class="modal fade" id="cake" tabindex="-1" role="dialog" aria-labelledby="cakeLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="cakeLabel">Yum yum.</h4>
+              </div>
+              <div class="modal-body">
+                <img src="img/cake.jpg">
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- snacks -->
+        <div class="modal fade" id="snacks" tabindex="-1" role="dialog" aria-labelledby="snacksLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="snacksLabel">Cake frosting makes good skin cream also.</h4>
+              </div>
+              <div class="modal-body">
+                <img src="img/snacks.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+    </div>
 
-      <hr>
+    <footer>
+    </footer>
 
-      <footer>
-        <p>&copy; Company 2015</p>
-      </footer>
+
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
